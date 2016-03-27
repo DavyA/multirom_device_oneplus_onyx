@@ -60,10 +60,11 @@ BOARD_CUSTOM_BOOTIMG_MK := device/oneplus/onyx/custombootimg.mk
 #MultiROM config. MultiROM also uses parts of TWRP config
 TARGET_RECOVERY_IS_MULTIROM := true
 MR_INPUT_TYPE := type_b
-MR_INIT_DEVICES := device/oneplus/onyx/mr_init_devices.c
+MR_INIT_DEVICES := device/oneplus/onyx/multirom/mr_init_devices.c
 MR_DPI := xhdpi
 MR_DPI_FONT := 340
 MR_FSTAB := device/oneplus/onyx/recovery.fstab
 MR_KEXEC_MEM_MIN := 0x30000000
-MR_DEVICE_HOOKS := device/oneplus/onyx/mr_hooks.c
+MR_DEVICE_HOOKS := device/oneplus/onyx/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 4
+MR_INFOS := device/oneplus/onyx/multirom/infos
